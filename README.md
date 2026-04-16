@@ -25,7 +25,6 @@
 6. [Sample Prompts to Try](#sample-prompts-to-try)
 7. [Common Errors and Fixes](#common-errors-and-fixes)
 8. [Extension Ideas](#extension-ideas)
-9. [Instructor Note](#instructor-note)
 
 ---
 
@@ -84,7 +83,8 @@ Print to terminal
 ```
 RAG-workshop-Spring26-Pinecone/
 │
-├── app.py               ← Entry point: terminal chatbot loop
+├── app.py               ← Terminal chatbot entry point
+├── streamlit_app.py     ← Visual web chatbot (browser UI)
 ├── ingest.py            ← One-time script to load products into Pinecone
 ├── query.py             ← RAG logic: retrieve from Pinecone + generate with Gemini
 │
@@ -142,7 +142,7 @@ cd RAG-workshop-Spring26-Pinecone
 **Option B: Clone directly**
 
 ```bash
-git clone https://github.com/INSTRUCTOR_USERNAME/RAG-workshop-Spring26-Pinecone.git
+git clone https://github.com/KaungMyatNaing9/RAG-workshop-Spring26-Pinecone.git
 cd RAG-workshop-Spring26-Pinecone
 ```
 
@@ -184,7 +184,7 @@ With your virtual environment active, install all required packages:
 pip install -r requirements.txt
 ```
 
-> This will download `sentence-transformers`, `pinecone`, `google-generativeai`, and `python-dotenv`.
+> This will download `sentence-transformers`, `pinecone`, `google-generativeai`, `python-dotenv`, and `streamlit`.
 > The first install may take 2–3 minutes because sentence-transformers includes PyTorch.
 
 ---
@@ -298,6 +298,10 @@ Upsert complete!
 
 ### Step 9 — Run the Chatbot
 
+You have two options — both use the same RAG pipeline under the hood.
+
+**Option A: Terminal chatbot**
+
 ```bash
 python app.py
 ```
@@ -320,6 +324,22 @@ You should see:
 ```
 
 Then type your question and press **Enter**.
+
+---
+
+**Option B: Streamlit web UI (visual)**
+
+```bash
+streamlit run streamlit_app.py
+```
+
+Streamlit will open a browser window automatically at `http://localhost:8501`.
+
+Features of the Streamlit app:
+- Chat bubble UI with full conversation history
+- Collapsible **Sources retrieved from Pinecone** panel after each answer showing which products were retrieved and their similarity scores
+- Sidebar with sample prompts and a **Clear conversation** button
+- Same RAG pipeline as the terminal app — just a nicer interface
 
 ---
 
@@ -448,8 +468,8 @@ results = index.query(
 )
 ```
 
-### 5. Build a Streamlit UI
-Replace the terminal loop in `app.py` with a Streamlit web interface. Install it with `pip install streamlit` and check the [Streamlit docs](https://docs.streamlit.io).
+### 5. Extend the Streamlit UI
+The Streamlit app (`streamlit_app.py`) is already included. Try extending it: add a price range slider in the sidebar that filters products before retrieval, show a product image placeholder, or display a table of all retrieved products with their scores.
 
 ### 6. Add Conversation Memory
 Right now every question is independent. Try storing the last 2–3 exchanges and including them in the Gemini prompt for multi-turn conversation context.
@@ -463,27 +483,3 @@ matches = [m for m in matches if m["score"] > 0.4]
 
 This prevents irrelevant context from confusing the model.
 
----
-
-## Instructor Note
-
-### How to Demo This Live (10–15 Minutes)
-
-**Recommended demo order:**
-
-1. **(2 min)** Show the folder structure. Briefly explain what each file does. Emphasize the three-file separation: `ingest.py` → `query.py` → `app.py`.
-
-2. **(2 min)** Show `data/products.json` and `utils/embeddings.py`. Ask: *"What does it mean to convert text into a vector?"* Draw or sketch the idea of semantic space on a whiteboard if possible.
-
-3. **(2 min)** Run `python ingest.py` live. Point to the terminal output as each step completes. Show the Pinecone dashboard to confirm the 12 vectors appeared.
-
-4. **(5 min)** Run `python app.py`. Ask a few questions live — start with simple ones, then try a comparison question. Show the **[Sources retrieved from Pinecone]** section and explain: *"These are the products the vector search found before Gemini even started writing."*
-
-5. **(2 min)** Open `query.py` and show `build_prompt()`. Read the system instructions aloud. Ask: *"Why do we tell Gemini to only use the retrieved context?"* (Answer: to prevent hallucination and keep answers grounded.)
-
-6. **(Optional 2 min)** Live extension: change `top_k=3` to `top_k=1` and ask the same comparison question. Show how answer quality drops. Discuss the retrieval vs. generation trade-off.
-
-**Tips:**
-- Have a terminal and browser (Pinecone dashboard) open side by side.
-- Pre-run `ingest.py` before the session so the model download is cached — saves 1–2 minutes of wait time on stage.
-- Have students fork first, then follow along in their own terminals while you demo.

@@ -21,7 +21,7 @@ from utils.pinecone_db import query_index
 # ── Configure Gemini ──────────────────────────────────────────────────────────
 # We call configure() once here; the model is initialised in ask() so it picks
 # up any key set after this module is imported.
-GEMINI_MODEL_NAME = "gemini-1.5-flash"
+GEMINI_MODEL_NAME = "gemini-2.5-flash"
 
 
 def format_product_context(match):
