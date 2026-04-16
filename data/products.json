@@ -1,0 +1,194 @@
+[
+  {
+    "id": "prod_001",
+    "name": "ProDesk Mechanical Keyboard",
+    "category": "Input Devices",
+    "price": 89.99,
+    "short_description": "A compact tenkeyless mechanical keyboard with tactile brown switches, RGB backlighting, and a durable aluminum frame.",
+    "features": [
+      "Tenkeyless (TKL) layout",
+      "Cherry MX Brown switches",
+      "Per-key RGB backlighting",
+      "Aluminum top frame",
+      "Detachable USB-C cable",
+      "N-key rollover"
+    ],
+    "use_case": "Ideal for programmers, writers, and students who type for long hours and want a satisfying tactile feel without loud clicks."
+  },
+  {
+    "id": "prod_002",
+    "name": "LumiSmart Desk Lamp",
+    "category": "Lighting",
+    "price": 45.99,
+    "short_description": "A smart LED desk lamp with adjustable color temperature, brightness control, a USB-A charging port, and a built-in timer.",
+    "features": [
+      "5 color temperature modes (warm to daylight)",
+      "10 brightness levels",
+      "USB-A charging port on base",
+      "Built-in 30/60-minute auto-off timer",
+      "Touch-sensitive controls",
+      "Flexible gooseneck arm"
+    ],
+    "use_case": "Perfect for students and remote workers who need adjustable lighting for reading, studying, or video calls at their desk."
+  },
+  {
+    "id": "prod_003",
+    "name": "SoundWave Pro Earbuds",
+    "category": "Audio",
+    "price": 129.99,
+    "short_description": "Truly wireless earbuds with active noise cancellation, 28-hour total battery life, and IPX5 water resistance.",
+    "features": [
+      "Active Noise Cancellation (ANC)",
+      "8-hour earbud battery + 20-hour charging case",
+      "IPX5 water resistance",
+      "Bluetooth 5.3",
+      "Touch controls on each earbud",
+      "Transparency mode"
+    ],
+    "use_case": "Great for commuters, gym-goers, and anyone who wants to focus without distractions. Works well for calls and music."
+  },
+  {
+    "id": "prod_004",
+    "name": "UltraHub USB-C Hub",
+    "category": "Accessories",
+    "price": 39.99,
+    "short_description": "A 7-in-1 USB-C hub with HDMI, two USB-A ports, SD/microSD card readers, and 100W pass-through charging.",
+    "features": [
+      "4K HDMI output",
+      "2x USB-A 3.0 ports",
+      "SD and microSD card readers",
+      "100W USB-C power delivery pass-through",
+      "Plug-and-play, no driver needed",
+      "Compact aluminum body"
+    ],
+    "use_case": "Essential for MacBook or laptop users who need to connect multiple peripherals at once. Great for presentations and home office setups."
+  },
+  {
+    "id": "prod_005",
+    "name": "RiseUp Laptop Stand",
+    "category": "Ergonomics",
+    "price": 34.99,
+    "short_description": "An adjustable aluminum laptop stand with 6 height settings, foldable design, and non-slip pads to improve posture and airflow.",
+    "features": [
+      "6 adjustable height levels",
+      "Foldable and portable",
+      "Supports laptops up to 17 inches",
+      "Anti-slip silicone pads",
+      "Open ventilation design",
+      "Aluminum alloy build"
+    ],
+    "use_case": "Helps students and professionals maintain better posture during long work sessions. Pairs well with an external keyboard and mouse."
+  },
+  {
+    "id": "prod_006",
+    "name": "ClearView HD Webcam",
+    "category": "Video",
+    "price": 79.99,
+    "short_description": "A 1080p HD webcam with autofocus, built-in stereo microphone, privacy cover, and universal clip mount.",
+    "features": [
+      "1080p at 30fps video",
+      "Autofocus with low-light correction",
+      "Built-in dual stereo microphone",
+      "Physical privacy shutter",
+      "Universal clip fits monitors and laptops",
+      "Plug-and-play USB-A"
+    ],
+    "use_case": "Best for remote workers, students attending online classes, and anyone who wants a clear video presence in Zoom or Teams calls."
+  },
+  {
+    "id": "prod_007",
+    "name": "PowerBank X20000",
+    "category": "Power",
+    "price": 49.99,
+    "short_description": "A 20,000mAh portable power bank with dual USB-A outputs, one USB-C output, 18W fast charging, and an LED battery indicator.",
+    "features": [
+      "20,000mAh capacity",
+      "18W fast charging via USB-C",
+      "2x USB-A output ports",
+      "1x USB-C input/output",
+      "LED 4-bar battery indicator",
+      "Airline-approved capacity"
+    ],
+    "use_case": "Reliable backup power for students on campus, travelers, or anyone away from an outlet. Can charge a phone 4-5 times."
+  },
+  {
+    "id": "prod_008",
+    "name": "NoiseFree Headphones",
+    "category": "Audio",
+    "price": 159.99,
+    "short_description": "Over-ear wireless headphones with premium active noise cancellation, 40-hour battery life, foldable design, and memory foam earcups.",
+    "features": [
+      "Hybrid Active Noise Cancellation",
+      "40-hour battery life",
+      "Bluetooth 5.2 with multipoint pairing",
+      "Foldable for travel",
+      "Memory foam earcups",
+      "3.5mm wired mode for no-battery use"
+    ],
+    "use_case": "Top pick for students in busy dorms, open offices, or libraries. Also works as a wired headset when battery runs out."
+  },
+  {
+    "id": "prod_009",
+    "name": "MonitorGlow Light Bar",
+    "category": "Lighting",
+    "price": 35.99,
+    "short_description": "A monitor-mounted LED light bar with asymmetric lighting design to illuminate your desk without screen glare, plus wireless remote control.",
+    "features": [
+      "Asymmetric optical design (no screen glare)",
+      "Stepless dimming and color temperature",
+      "Wireless magnetic rotary remote",
+      "USB-A powered",
+      "Mounts on most monitors without clips",
+      "Auto memory of last settings"
+    ],
+    "use_case": "Great addition to any desk setup that needs extra lighting without the bulk of a separate lamp. Popular for late-night study and coding sessions."
+  },
+  {
+    "id": "prod_010",
+    "name": "SmartPlug Mini",
+    "category": "Smart Home",
+    "price": 19.99,
+    "short_description": "A compact Wi-Fi smart plug that lets you control any outlet remotely via app or voice assistant, with energy monitoring built in.",
+    "features": [
+      "Works with Alexa, Google Home, and Apple HomeKit",
+      "Real-time energy monitoring",
+      "Schedule and timer support",
+      "Compact design does not block second outlet",
+      "No hub required",
+      "Away mode for random on/off scheduling"
+    ],
+    "use_case": "Turn any regular device smart. Great for controlling lamps, fans, or chargers on a schedule or remotely."
+  },
+  {
+    "id": "prod_011",
+    "name": "ErgoWrist Mouse Pad",
+    "category": "Ergonomics",
+    "price": 24.99,
+    "short_description": "An extended XXL mouse pad with a built-in memory foam wrist rest, water-resistant surface, and non-slip rubber base.",
+    "features": [
+      "XXL size covers keyboard and mouse area",
+      "Memory foam wrist rest",
+      "Water-resistant micro-texture surface",
+      "Anti-fray stitched edges",
+      "Non-slip rubber backing",
+      "Compatible with optical and laser mice"
+    ],
+    "use_case": "Reduces wrist strain during long typing or gaming sessions. Ideal for students who use a desktop or external mouse setup."
+  },
+  {
+    "id": "prod_012",
+    "name": "AirCharge Wireless Pad",
+    "category": "Power",
+    "price": 29.99,
+    "short_description": "A 15W fast wireless charging pad compatible with Qi-enabled phones, AirPods, and smartwatches, with a sleek matte finish.",
+    "features": [
+      "15W fast charge for Samsung, 12W for other Android, 7.5W for iPhone",
+      "Universal Qi compatibility",
+      "LED charging status indicator",
+      "Foreign object detection",
+      "Anti-slip base",
+      "USB-C input cable included"
+    ],
+    "use_case": "Clean desk solution for wireless phone charging. Works with most modern smartphones and wireless earbuds cases."
+  }
+]

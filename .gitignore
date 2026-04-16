@@ -1,0 +1,22 @@
+# Environment variables — never commit your real API keys
+.env
+
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# HuggingFace model cache (large files)
+.cache/
+
+# macOS
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/

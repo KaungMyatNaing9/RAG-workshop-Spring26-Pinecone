@@ -1,0 +1,15 @@
+# Core dependencies for the RAG Workshop project
+# Install with: pip install -r requirements.txt
+
+# Pinecone vector database client (v3+ uses the new unified SDK)
+pinecone==5.4.2
+
+# Google Gemini API (Google AI Studio)
+google-generativeai==0.8.3
+
+# Sentence-transformers for local text embeddings
+# This will also install torch and transformers automatically
+sentence-transformers==3.3.1
+
+# Load API keys from a .env file
+python-dotenv==1.0.1
